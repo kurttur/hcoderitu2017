@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HCoder</string>
+    <string name="login">log in</string>
+    <string name="username">Username</string>
+    <string name="login_button">Login</string>
+    <string name="choose_file">Choose File</string>
+    <string name="send_file">Send File</string>
+    <string name="refresh">Refresh</string>
+    <string name="get_file">Get File</string>
+    <string name="ok_button">OK</string>
+
+    <string name="server_url">http://192.168.1.37:4000</string>
+</resources>

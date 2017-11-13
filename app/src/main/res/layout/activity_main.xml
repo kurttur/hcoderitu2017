@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context="com.hcoderteam.hcoder.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <TextView
+            android:id="@+id/send_file_header"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/md_blue_grey_800"
+            android:textColor="@color/md_white_1000"
+            android:text="@string/send_file"
+            android:gravity="center"/>
+
+        <ListView
+            android:id="@+id/send_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/send_file_header"
+            android:layout_above="@+id/send_button"
+            android:layout_marginTop="10dp">
+
+        </ListView>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/send_button"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/choose_file"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="@color/md_white_1000"
+            android:background="@drawable/button_blue"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/get_file_header"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/md_blue_grey_800"
+            android:textColor="@color/md_white_1000"
+            android:text="@string/get_file"
+            android:gravity="center"/>
+
+        <ListView
+            android:id="@+id/get_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/get_file_header"
+            android:layout_above="@+id/get_button"
+            android:layout_marginTop="10dp">
+
+        </ListView>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/get_button"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/refresh"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="@color/md_white_1000"
+            android:background="@drawable/button_blue"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
